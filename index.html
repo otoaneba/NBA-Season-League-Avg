@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA League Avg</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+    	<div style="position: absolute; top: 30px; margin-left: 300px">
+    		<p class="title">NBA League Avg per Season</p>
+    	</div>
+        <div style="position: absolute; top: 300px;">
+            <div>
+                <label for="categorySelect">Y Scale:</label>
+            </div>
+            <select class="custom-select small" id="yScaleSelect" onchange="onYScaleChanged()">
+              <option value="Season">Season</option>
+              <option value="Age">Age</option>
+              <option value="FG">FG per Game</option>
+              <option selected value="FGA">FGA</option>
+              <option value="3P">3P</option>
+              <option value="3PA">3PA</option>
+              <option value="FT">FT</option>
+              <option value="FTA">FTA</option>
+              <option value="FG%">FG%</option>
+            </select>
+        </div>
+        <div style="position: absolute; top: 20px;">
+<!--     		<p>asdf</p>
+ -->    	</div>
+        <div style="margin-left: 160px;">
+            <svg width="600" height="600" style="border: 1px solid #777;">
+            </svg>
+        </div>
+        <div style="margin-left: 380px;">
+            <label for="categorySelect">X Scale: Season</label>
+        </div>
+    </div>
+</body>
+<script src="https://d3js.org/d3.v5.js"></script>
+<script src="./nba.js"></script>
+</html>

@@ -1,0 +1,44 @@
+.line-plot {
+    fill: none;
+    stroke-width: 1.5px;
+    stroke: #333;
+}
+
+.company-label {
+    text-anchor: middle;
+    font-size: 20px;
+    font-weight: semibold;
+    opacity: 0.8;
+}
+
+.axis-label {
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: semibold;
+}
+
+.grid path,
+.grid line {
+    stroke: #fff;
+}
+
+.background {
+    fill: #eee;
+}
+
+body {
+    font-family:  
+    -apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,
+    "Noto Sans",sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.title {
+    font-weight: 300;
+    font-size: calc(0.525rem + 1.3vw);
+}
+
+#main {
+    margin: 20px;
+}

@@ -1,5 +1,5 @@
 ## Simple Interactive Information Visualizatin for using NBA data
 
-url: https://www.github.io/otoaneba/NBA-Season-League-Avg 
+url: https://otoaneba.github.io/NBA-Season-League-Avg/
 
 ![alt text](nba-capture.PNG)

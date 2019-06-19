@@ -4,13 +4,6 @@
     stroke: #333;
 }
 
-.company-label {
-    text-anchor: middle;
-    font-size: 20px;
-    font-weight: semibold;
-    opacity: 0.8;
-}
-
 .axis-label {
     text-anchor: middle;
     font-size: 12px;

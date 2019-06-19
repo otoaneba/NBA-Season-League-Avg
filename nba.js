@@ -61,9 +61,6 @@ d3.csv('./nba_league_avg.csv',
     }).then(
     function(dataset){
     
-
-        //**** Your JavaScript code goes here ****
-
         //Create global variables here
         nba = dataset;
 
@@ -74,7 +71,6 @@ d3.csv('./nba_league_avg.csv',
             .range([chartHeight, 0]);
 
         // Get min, max here for all dataset columns
-        // Fun tip, dataset.columns includes an array of the columns
         domainMap = {};
 
         dataset.columns.forEach(function(column) {
@@ -90,9 +86,9 @@ d3.csv('./nba_league_avg.csv',
 
 
 function updateChart() {
-    // **** Draw and Update your chart here ****
     // Update the scales based on new data attributes
     yScale.domain(domainMap[chartScales.y]).nice();
+    //hard code x value for the season
     xScale.domain([1945, 2020]).nice();
 
     // Update the axes here first
@@ -159,4 +155,3 @@ function updateChart() {
             return 'translate('+[tx, ty]+')';
         });
 }
-// Remember code outside of the data callback function will run before the data loads
